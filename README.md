@@ -83,7 +83,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 * If the message is not the author’s, then there is not a ‘close button’ added and the message floats right
 * The display below highlights the design of the message display
 
-![IMAGE](images/ImageSIX_messageFormattingBehaviour.png)
+![IMAGE](images_A/ImageSIX_messageFormattingBehaviour.png)
 
 * The class ‘self’ is added to the div and if the message is the authors, then it **floats left**, has a blue color, a close icon, an author tab and a timestamp
 * If there is **not** a ‘self’ class then the message is not the originating author, **floats right**, has a grey color, a close icon, an author tab and a timestamp
