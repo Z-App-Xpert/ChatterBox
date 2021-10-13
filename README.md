@@ -16,7 +16,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If the above two components are false then the default index.html view displays the Welcome screen as shown below. The form shown below is within the bootstrap grid container with id = "nameForm"
 
-![IMAGE](images/imageOne_WelcomePage.png)
+![IMAGE](images_B/imageOne_WelcomePage.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note:  Should the user click submit here and not enter a name, the bootstrap model relies on popper.js to pop up a message stating, 'this is a required field.'  Bootstrap 4 depends on JavaScript which uses popper.js.
 See https://getbootstrap.com/docs/4.1/getting-started/javascript/
@@ -35,7 +35,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The current_view is now 'channels.' Note that jinja2 displays all channels, and if no channels are stored, then 'general' is the default value as defined in the application.py file. As channels grow in number, bootstraps responsiveness keeps moving the channels down the page.
 
-![IMAGE](images/imageTwo_switchToChannels.png)
+![IMAGE](images_B/imageTwo_switchToChannels.png)
 
 **Event Three - document.querySelector('#channelForm').addEventListener('submit',(event)=>{}**
 
@@ -47,7 +47,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next 'Event One' triggers again after the Document is loaded.  This time there is a name in local storage and there is a channel name, so the switchToChannels function runs again and the channels are displayed one under each other on the grid. See illustration below.
 
-![IMAGE](images/imageThree_channelForm_AddChannels.png)
+![IMAGE](images_B/imageThree_channelForm_AddChannels.png)
 
 
 **Event Four - channel.addEventListener('click',()=>{}**
@@ -68,7 +68,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The view appears in the illustration below.
 
-![IMAGE](images/imagFour_SendAMessageDisplayMessage.png)
+![IMAGE](images_B/imagFour_SendAMessageDisplayMessage.png)
 
 **Event Five – document.querySelector('#messageForm').addEventListener('submit', (event) => {}**
 
@@ -83,7 +83,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 * If the message is not the author’s, then there is not a ‘close button’ added and the message floats right
 * The display below highlights the design of the message display
 
-![IMAGE](images_A/ImageSIX_messageFormattingBehaviour.png)
+![IMAGE](images_B/ImageSIX_messageFormattingBehaviour.png)
 
 * The class ‘self’ is added to the div and if the message is the authors, then it **floats left**, has a blue color, a close icon, an author tab and a timestamp
 * If there is **not** a ‘self’ class then the message is not the originating author, **floats right**, has a grey color, a close icon, an author tab and a timestamp
@@ -91,7 +91,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 **Event Six - document.querySelector('.back').addEventListener('click', () => {}**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the user clicks the back arrow on the view, then the view changes back to the channelFormRow. The messages and messageFormRow are removed from the view. The back arrow icon is found at https://ionicons.com/
-![IMAGE](images/imageSevenBackButton.png)
+![IMAGE](images_B/imageSevenBackButton.png)
 
 **Event Seven – User deletes a message by clicking on the close button**
 
@@ -102,7 +102,7 @@ See https://getbootstrap.com/docs/4.1/getting-started/javascript/
 * The channel is not deleted, but the rest of the message is sent back to the client in a ‘refresh message’
 * The ‘refresh message’ at the client level then removes the message from the html Document*
 
-![IMAGE](images/imageEightCloseButton.png)
+![IMAGE](images_B/imageEightCloseButton.png)
 
 
 **Requirements met**
